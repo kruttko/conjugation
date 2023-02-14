@@ -3,6 +3,43 @@ html {
     font-size: 16px
 }
 
+/* 
+function typeToWordBoxColor(type) {
+  switch (type) {
+    case "u":
+      return "rgb(255, 125, 0)";
+    case "ru":
+      return "rgb(5, 80, 245)";
+    case "irv":
+      return "gray";
+    case "ira":
+      return "gray";
+    case "i":
+      return "rgb(0, 180, 240)";
+    case "na":
+      return "rgb(143, 73, 40)";
+  }
+}
+
+
+function updateStatusBoxes(word, entryText) {
+  let statusBox = document.getElementById("status-box");
+  statusBox.style.display = "inline-flex";
+
+  if (word.conjugation.conjugations.some( e => e == entryText)) {
+    statusBox.style.background = "green";
+    document.getElementById("status-text").innerHTML = "Correct" + "<br>" + entryText + " ○";
+  } else {
+    document.getElementById("verb-box").style.background = typeToWordBoxColor(word.wordJSON.type);
+    changeVerbBoxFontColor("white");
+    document.getElementById("verb-type").textContent = wordTypeToDisplayText(word.wordJSON.type);
+
+    statusBox.style.background = "rgb(218, 5, 5)";
+    document.getElementById("status-text").innerHTML = (entryText == "" ? "_" : entryText) +
+    " ×<br>" + word.conjugation.conjugations[0] + " ○";
+  }
+} */
+
 body {
     background: rgb(34, 34, 31);
     --whiteTextColor: rgb(232, 232, 232);
